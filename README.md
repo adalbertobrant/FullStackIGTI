@@ -8,5 +8,5 @@ BootCamp FullStack IGTI
 
 [![solarized dualmode](https://github.com/altercation/solarized/raw/master/img/solarized-yinyang.png)](#features)
 
-[AULAS](https://github.com/adalbertobrant/FullStackIGTI/blob/master/imagens/Bootcamp%20Full%20Stack%20-%20Turma%2001-1.png?raw=true "Cronograma Turma 01")
+[![AULAS](https://github.com/adalbertobrant/FullStackIGTI/blob/master/imagens/Bootcamp%20Full%20Stack%20-%20Turma%2001-1.png?raw=true "Cronograma Turma 01")]
 

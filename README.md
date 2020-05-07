@@ -6,4 +6,5 @@ BootCamp FullStack IGTI
 
 <p> Cronograma de Aulas </p>
 
-[AULAS](imagens/Bootcamp Full Stack - Turma 01-1.png)
+![AULAS](/imagens/Bootcamp Full Stack - Turma 01-1.png?raw=true "Cronograma Turma 01")
+

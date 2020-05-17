@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style_intro_javascript.css">
+    <title>Introdução ao Javascript</title>
+</head>
+<body>
+    <h1 id="titulo">Introdução ao Javascript</h1>
+    <h3 id="subtitulo">Ativação do Javascript na página web</h3>
+    <div id="texto">
+        <p>Para colocar o javascript na página web você deve usar a tag 
+            <span id="negrito">script</span>, na tag  <span id="negrito">body</span>.</p>
+        <p>Da seguinte forma abaixo:</p>
+        <img class="imagem" src="img/exemplo-01-javascript.png" alt="tag script deve estar no final do body apontando para o diretório aonde esta o arquivo javascript">
+        <p>Esse arquivo deve estar em um diretório, e o seu caminho deve ser apontado relativamente. </p>
+    </div>
+    <h3 id="subtitulo">Tipos em Javascript</h3>
+    <div id ="texto">
+        <p>O javascript é considerado uma linguagem fracamente tipada, ou seja ele internamente consegue manipular
+            um valor de entrada e muitas vezes retornar o resultado esperado através de uma string. </p>
+        <p>Na tabela abaixo vemos alguns deses tipos.</p>
+        <table id="tabela">
+            <tr>
+            <th>TIPO</th>
+            <th>EXEMPLO</th>
+            <th>Atribuição</th>
+            </tr>
+            <tr>
+                <td>number</td>
+                <td>1, 5.019</td>
+                <td>var numero = 2.56;</td>
+            </tr>
+            <tr>
+                <td>string</td>
+                <td>"casa", "1,2,3,4", 'teste', '1,2,3,4,5'</td>
+                <td>var string = "isso é uma string";</td>
+            </tr>
+            <tr>
+                <td>boolean</td>
+                <td>true,false</td>
+                <td>true != false</td>
+            </tr>
+            <tr>
+                <td>null</td>
+                <td>definido pelo programador falsy element</td>
+                <td>var x = null;</td>
+            </tr>
+            <tr>
+                <td>undefined</td>
+                <td>definido pelo ECMA é também um falsy element</td>
+                <td>if(yx); no console dá undefined pois não se sabe o valor de yx</td>
+            </tr>
+            <tr>
+                <td>object</td>
+                <td>{id:2,nome:"josé}, [1,2,"teste",5]</td>
+                <td>var objeto_dic = {chave:2, key:4,senha:456};</td>
+            </tr>
+
+        </table>
+    </div>
+    <h3 id = "subtitulo">Estruturas de Decisão em Javascript</h3>
+    <div id="texto">
+        <p>O javascript possui três estruturas de decisão que podem retornar valores verdadeiros ou falsos. Elas são:
+            <p id="negrito">If/Else</p>
+            <p>O comando if/else é a principal estrutura de decisão, se a condição do if estiver verdadeira é 
+                retornada, senão vai para a condição else onde é retornada.</p>
+            <p>Uma boa prática no comando if é testar a sua negação e também colocar o caso mais comum
+                    em primeiro lugar , pois tudo entre as clausas será interpretado.
+            </p>
+            <p id ="negrito">Switch</p>
+            <p>Testa um caso específico de igualdade e retorna valor para o usuário, caso a condição não esteja especificada
+                é retornado o que estiver na claúsula default.</p>
+            <p id ="negrito">Operador Ternário ( ? )</p>
+            <p>pode ser utilizado para substituir o if em condições simples:</p>
+            <p>expressão_condicional ? true:false</p>
+        </p>
+    </div>
+    <h3 id="subtitulo">Estruturas de Repetição</h3>
+    <div id="texto">
+        <p>Existem três estruturas básicas de repetição no javascript o comando <span id="negrito">while</span>
+        ,o comando <span id="negrito">do while </span>e o comando <span id="negrito">for</span>.</p>
+        <p>As estruturas de repetição como o próprio nome indica servem para executar comandos que seriam 
+            feitos ou realizados mais de uma vez, dentro de um bloco de código específico, como por exemplo, o procedimento de 
+            busca em uma lista com vários objetos.</p>
+        <p>Veja a tabela abaixo.</p>
+        <table id="tabela">
+            <th>COMANDO</th>
+            <th>ESTRUTURA</th>
+            <th>EXEMPLO</th>
+            <tr>
+                <td>WHILE</td>
+                <td>while(condição){ código a ser executado}</td>
+                <td>while(true){console.log("oi");
+                    <p>break;</p>
+                    <p>}</p>
+                </td>
+            </tr>
+            <tr>
+                <td>DO WHILE</td>
+                <td>do { código a ser executado } while(condiçã);</td>
+                <td>var x = 1;
+                    <p>do{ console.log(x);</p>
+                        <p>x+=1;</p>
+                        <p>}</p>
+                        <p>while(x< 100);</p>
+                </td>
+            </tr>
+            <tr>
+                <td>FOR</td>
+                <td>for(declara variável;condição de verificaçao; 
+                    incremento ou decremento da variável){código a ser executado}</td>
+                    <td>for(let i=0;i&#x3c;10;i++){<p>console.log(i);</p>
+                        <p>}</p>
+                        </td> 
+            </tr>
+        </table>
+    </div>
+    <h3 id = "subtitulo">Funções em Javascript</h3>
+    <div id="texto">
+        <p>Funções são um bloco de códigos que executam comandos específicos para um determinado
+            programa, ele fica criado no arquivo .js e pode ser chamado de acordo com a necessidade.
+        </p>
+        <p>Quando navegador carrega a página ele já carrega também as funções inclusas no código js.</p>
+        <p>O comando console.log("imprime na tela"); é um exemplo de função. </p>
+        <p> Para declarar uma função no javascript se utiliza a palavra <span id ="negrito">
+            function</span> seguida do nome da função (parametros) e o bloco de instrução {}. Veja o exemplo abaixo: </p>
+        <p id="negrito">function soma(a,b){</p>
+        <p id="negrito">return a+b; </p>
+        <p id="negrito">}</p>
+    </div>
+    <script src ="./js/intro_javascript.js"></script>
+</body>
+</html>

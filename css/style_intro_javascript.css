@@ -1,0 +1,42 @@
+
+#titulo {
+    text-align: center;
+    color: purple;
+    font-size: 40px;
+    padding: 2rem;
+}
+#subtitulo {
+    padding: 1rem;
+    font-size: 20px;
+}
+#texto {
+    padding: 20px;
+    text-indent: 1rem;;
+    text-align: justify;
+    letter-spacing: 1px;
+    line-height: 2rem;
+}
+#negrito {
+    font-weight: bold;
+}
+.imagem {
+    padding: 1rem;
+    width: 100%;
+    border: solid;
+}
+#tabela {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+#tabela td, #tabela th {
+    border: 2px solid #ddd;
+    padding: 8px;
+  }
+#tabela th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+     background-color: #4CAF50;
+     color: white;
+}

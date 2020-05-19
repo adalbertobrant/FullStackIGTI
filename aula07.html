@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários em HTML 5</title>
+</head>
+<body>
+    <form action="./conteudoFormulario/form.txt"> <!--envia o conteúdo do formulário para um local específico-->
+        <p> Entre uma anotação qualquer</p>
+        <textarea name="anota" id="anotacoes" cols="30" rows="10"></textarea>
+        <p>Exemplo de formulario input type = text </p>
+        <input type ="text" id="nomeCompleto"/>
+       <p> input do tipo checkbox
+           <input type="checkbox" id="escolha1" > checkbox
+            <input type="checkbox" id="escolha2" > checkbox2
+            <input type="checkbox" id="escolha3" > checkbox3
+        </p> 
+        <p> Input do tipo radio, para marcar apenas um na escolha deve-se colocar um name="nome"
+            <p>o atributo name serve para agrupar os dois input radio.</p>
+            <input type="radio" id="rad1" name="opt" > SIM
+            <input type="radio" id="rad2" name="opt"> NÃO
+            <p>Assim se percebe que o radio faz parte de uma opção.</p>            
+         </p> 
+         <p> Informe o e-mail
+            <input type="email" id="email" size= 30  placeholder="email@email.com">
+         </p>
+         <p>Data de Nascimento
+             <input type="date">
+         </p>
+         <p>
+             <input type="submit" value = "ENVIAR">
+         </p>
+
+
+
+
+
+    </form>
+    <script src=./js/formulario.js></script>
+</body>
+</html>

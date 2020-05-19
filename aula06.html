@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/manipulando_dom.css">
+    <title>Manipulando o DOM</title>
+</head>
+<body>
+    <h1 class="titulo">Manipulação no DOM</h1>
+    <div class ="prgf">
+        <p>O DOM ou modelo de objetos de documento ou em inglês Document Object Model, se 
+            refere a uma maneira de organizar toda uma página web em uma estrutura de árvore com pais e filhos, para que 
+            se possa encontrar partes do html de maneira mais rápida e simples.
+            A manipulação do DOM normalmente é feita utilizando frameworks pois tem um custo computacional. 
+            Listamos a seguir os comandos e breve explicação.
+        </p>
+        <p><ul id="negrito">querySelector()</ul> - Pode acessar elementos no html um a um sendo instanciado sempre a sua primeira ocorrência. </p>
+        <p>var paragrafo = documento.querySelector('p');</p>
+        <p><ul id="negrito">querySelectorAll()</ul>- Retorna elementos do tipo node list ou seja uma lista linkada com os pais e filhos. Pode ser feita uma conversão de nós 
+            para Array da seguinte forma:</p>
+        <ul>var x = Array.from(document.querySelectorAll('p'));</ul>
+        <p><ul id='negrito'>textContent</ul> - Retorna o conteúdo textual de alguns elementos.</p>
+        <p>elemento.textContent = "Mudando elemento";</p>
+        <p> Colocar class.List.add() e remove();</p>
+    </div>
+
+    
+    
+    <script src ="./js/manipulaDom.js"></script>
+</body>
+</html>

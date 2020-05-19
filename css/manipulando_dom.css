@@ -1,0 +1,16 @@
+.titulo {
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+    color: purple;
+}
+.prgf {
+    padding: 20px;
+    text-indent: 1rem;;
+    text-align: justify;
+    letter-spacing: 1px;
+    line-height: 2rem;
+}
+#negrito {
+    font-weight: bold;
+}

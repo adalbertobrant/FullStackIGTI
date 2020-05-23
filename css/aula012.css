@@ -1,0 +1,27 @@
+h1 {
+    color: lightgreen;
+    text-align: center;
+    font-weight: bold;    
+}
+#introducao {
+    padding: 20px;
+    text-indent: 1rem;
+    text-align: justify;
+    letter-spacing: 1px;
+    line-height: 2rem;
+}
+
+.teclado  { 
+    margin-left: 40px;
+    text-indent: 1rem;
+    letter-spacing: 1px;
+    line-height: 2rem;
+}
+#resultado, #textoRest {
+    color: blueviolet;
+    font-weight: bolder;
+    line-height: 2rem;    
+    text-indent: 1rem;
+    letter-spacing: 1px;
+}
+

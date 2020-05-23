@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="./css/aula011.css">
+    <title>Manipulando Arrays em Javascript Moderno</title>
+</head>
+<body>
+    <h1>Manipulando Arrays em Javascript Moderno</h1>
+
+    <h3>Principais Métodos de Arrays com ES6+</h3>
+<div class="row">
+    <table  class="highlight col s6 stripped centered margem">
+        <tr>
+            <th>FUNÇÃO</th>
+            <th>DEFINIÇÃO</th>
+            <th>EXEMPLO</th>
+        </tr>
+        <tr>
+            <td>map()</td>
+            <td>A função map() cria um novo array com os resultados da chamada da função para cada elemento do array
+                ou seja cada elemento do array, onde esta sendo passada a função map() será alterado pela função, o map() não é executado se o array
+                não tiver elementos e também não altera o array original, em vez disso ele passa o resultado para outro array, sendo um método imutável.</td>
+                <td>let array = [1,2,3,4,5,6,7,8,9];
+                    const dobro = array.map(variável =>{
+                    return variavel *2; }
+                    );
+                    dobro =[2,4,6,8,10,12,14,16,18];
+                </td>              
+        </tr>
+        <tr>
+            <td>filter()</td>
+            <td>A filter( ) percorre todos os elementos do array e envia os resultados para um novo array, é considerado um método imutável pois não altera o array onde esta sendo realizada a filtragem.</td>
+            <td>const array = [1,2,3,4,5,6,7,8,9,10,11,12];
+                const maior_que_Dez = array.filter(maior=>{
+                        return maior > 10;
+                });
+                console.log(maior_que_Dez);
+            </td>
+        </tr>
+        <tr>
+            <td>forEach()</td>
+            <td>Itera sobre um array e faz a alteração do mesmo elemento a elemento, é um método mutável.</td>
+            <td>nomeIdadeDados.forEach(tam=>{
+                tam.tamanhoNome = tam.nome.first.length + tam.nome.last.length;
+            });
+            console.log(nomeIdadeDados);</td>
+        </tr>
+        <tr>
+            <td>reduce()</td>
+            <td>O método reduce pode ser utilizado para reduzir o array para um só valor. Quando feito uma função com 
+                callback ele faz a leitura do array da esquerda para a direita lendo cada valor do array , o retorno da leitura é 
+                colocado em um acumulador(resultado/total). Ele não lê posições do array sem valores e também não altera o array.
+            </td>
+            <td>array = [1,2,3,4,5];
+                const soma = array.reduce((acumulador,valor)=>{
+                    return acumulador + valor;
+                },0);
+                console.log (soma);
+            </td>
+
+
+        </tr>
+        <tr>
+            <td>find()</td>
+            <td>Procura dentro de um array o primeiro elemento que passe nas condições da função, caso encontre ele para de procurar e retorna o valor.</td>
+            <td>array = ["abaa", "baaa", "aaab", "baab", "ababa"];
+                const achou = array.find(elemento =>{
+                    return elemento ==="ababa";
+                });
+                console.log(achou); // vai mostrar o elemento encontrado
+            </td>
+            
+        </tr>
+        <tr>
+            <td>some()</td>
+            <td>Avalia se algum elemento do array passa num teste específico da função, 
+                caso passe ele não busca outros elementos e retorna true, 
+                senão ele retorna false e continua para o próximo elemento do array.</td>
+            <td>array = ["abaa", "baaa", "aaab", "baab", "ababa"];
+                const achou = array.some(palavra=>{
+                    return palavra ==="aaab";
+                });
+                console.log(achou); // irá mostrar apenas True ou seja a palavra se encontra no array.
+            </td>            
+        </tr>
+        <tr>
+            <td>every()</td>
+            <td>Avalia se todos os elementos do array passam em certo caso teste, caso verdadeiro retorna True, em caso de algum
+                elemento não passar no teste every para a execução e retorna False.
+            </td>
+            <td>array = ["abaa", "baaa", "aaab", "baab", "ababa"];
+                const tem = array.every(palavra=>{
+                    return palavra.lenght >= 3;
+                });
+                console.log(tem); // vai retornar True, pois todas as palavras do array são maiores do que 3
+            </td>
+            
+        </tr>
+        <tr>
+            <td>sort()</td>
+            <td>Faz a ordenação do array e também o modifica, sendo um método mutável, a ordenação é crescente ou decrescente, podendo ser alfabética ou numérica
+                em casos onde os números são strings pode haver confusão , devendo -se criar uma função de comparação.
+            </td>
+            <td>array = ["abaa", "baaa", "aaab", "baab", "ababa"];
+                array.sort();
+                console.log(array); 
+               <p><a href=" https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort" target="_blank">Saiba MAIS:</a></p> 
+            </td>
+            
+        </tr>
+    </table>
+</div>
+
+
+
+
+    <script src=./js/aula011JSON.js></script>
+    <script src="./js/aula011.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+</body>
+</html>

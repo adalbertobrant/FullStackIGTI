@@ -20,21 +20,25 @@
         <form action="">
             <p>
                 <label for="vermelho">(R) Vermelho</label>
-                <input type="range" id="vermelho" name="vermelho" min="0" max="255">
+                <input type="range" min="0" max="255" value = "0" id="vermelho" name="vermelho" step="1" >
+                <input type="text" id="valorRed"  size = "1" name="valorRed" value= 0 disabled >
             </p>
             <p>
                 <label for="verde">(G) Verde</label>
-                <input type="range" id="verde" name="verde" min="0" max="255">
+                <input type="range" min="0" max="255" value = "0"  id="verde" name="verde" step="1" >
+                <input type="text" id="valorGreen" size = "1" name="valorGreen" value= 0  disabled>
             </p>
             <p>
                 <label for="azul">(B) Azul</label>
-                <input type="range" name="azul" id="azul" min="0" max="255">
+                <input type="range" min="0" max="255" value = "0"   id="azul" name="azul" step="1" >
+                <input type="text" id="valorBlue" size = "1" name="valorBlue" value= 0 disabled>
             </p>          
 
         </form>
     </div>
     <div class="flex-container">
-        <div></div>
+        <p>Indicador da cor final </p>
+        <div id ="quadroCor"></div>
     </div>
     <script src=./js/script.js></script>
 </body>

@@ -1,0 +1,10 @@
+th {
+    text-align: center;
+    border-color: cadetblue;
+    border-spacing: 100px;
+    font-weight: bold;
+    background-color: rgb(157, 236, 143);    
+}
+.margem {
+    background-color: rgba(96, 172, 235, 0.876);
+}

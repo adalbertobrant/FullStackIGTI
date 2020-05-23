@@ -1,0 +1,13 @@
+h1{
+    text-align: center;
+    color: rgb(186, 124, 241);
+}
+#introducao {
+    text-align: justify;
+    margin-left:1rem;
+
+}
+#paginacao {
+    text-algin:justify;
+    margin-left:1 rem;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./materialize/css/materialize.min.css">
+    <link rel="stylesheet" href="./css/aula013.css">
+    <title>Requisições HTTP com Javascript</title>
+</head>
+
+<body>
+    <h1>Requisições HTTP com Javascript</h1>
+    <div class="texto">
+        <p>Existem muitas maneiras diferentes de realizar requisições HTTP com o javascript, uma delas é utilizando a
+            função fetch() associada com o then().
+        <p>A instrução <span id="negrito">fetch()</span>é encarregada de pegar a url e fazer o acesso ao local remoto.
+        </p>
+        <p>Entretanto o navegador não sabe precisar em quanto tempo essa requisição será feita e outros códigos
+            javascript, podem
+            ter que rodar após essa instrução, sem ter necessidade ou não de um vínculo com a instrução anterior.</p>
+        <p>Devemos então ter o cuidado de certificar que a requisição fetch esta ok,
+            caso necessitemos dela imediatamente após. Nesse sistema onde temos instruções que podem ou não retornar
+            algo,
+            bem como a espera da execução da função, isso tudo é conceituado em javascript como chamado assíncrono e sua
+            resposta
+            é uma promise que pode ter sido respondida ou não, dependendo da resposta a requisição por parte do
+            servidor.</p>
+        <p>
+            A promise é um tipo de objeto que é retornada logo a seguir depois de uma instrução do tipo fetch(), podendo
+            a mesma vir com conteúdo ou não.É nessário fazer o tratamento dessas requisições em caso positivo através da
+            instrução <span id="negrito">then()</span>.
+        </p>
+        <p>Veja a imagem a seguir para entender melhor o caminho de uma promise ela sempre tem duas opções.</p>
+        <p>
+            <img class="responsive-img circle"
+                src="https://media.prod.mdn.mozit.cloud/attachments/2018/04/18/15911/32e79f722e83940fdaea297acdb5df92/promises.png">
+        </p>
+        
+
+
+
+
+    </div>
+
+
+    <script src="./materialize/js/materialize.min.js"></script>
+    <script src="./js/aula013.js"></script>
+</body>
+
+</html>
